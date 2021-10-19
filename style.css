@@ -95,6 +95,10 @@ body {
   padding: 5px;
 }
 
+.table-sm {
+  margin: 20px;
+}
+
 /*Name card*/
 
 .name-card-card {
