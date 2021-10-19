@@ -1,32 +1,163 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lily's Personal Website - My Favourites</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Lily's Personal Website - My Favourite Singers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Lily's Personal Website</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a href="index.html">Home</a></li>
-      <li class="active"><a href="my_favourite_singers.html">My Favourite Singers</a></li>
-      <li><a href="my_favourite_activities.html">My Favourite Activities</a></li>
-    </ul>
-  </div>
-</nav>
-  
-<div class="container">
-  <h3>My Favourite Singers</h3>
-  <p>A navigation bar is a navigation header that is placed at the top of the page.</p>
-</div>
 
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand">Lily's Personal Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="my_favourite_singers.html">My Favourite Singers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="my_favourite_activity.html">My Favourite Activity</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid pt-3 my-3">
+
+    <div class="row">
+      <div class="col">
+        <div class="container-fluid">
+          <h2>My Favourite Singers</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="container-fluid">
+          <div class="my-favourite-singers-intro-1">
+            <p>I feel relaxed<br>when I am listening to the music!</p>
+          </div>
+          <div class="my-favourite-singers-intro-2">
+            <p>I like listening to the <i>music</i>.<br>The following table shows my favourite singers.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="container-fluid">
+          <img class="img-music-band" src="images/music-band.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <table class="table table-light table-striped table-hover">
+          <thead class="thead-dark">
+            <tr>
+              <th>English Name</th>
+              <th>Birthday</th>
+              <th>Example of Songs</th>
+              <th>Wikipedia Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Billie Eilish</td>
+              <td>December 18, 2001</td>
+              <td>
+                <ul class="song-list">
+                  <li>Bad Guys</li>
+                  <li>No Time To Die <span class="badge badge-success">Recommend</span></li>
+                </ul>
+              </td>
+              <td><u><a href="https://en.wikipedia.org/wiki/Billie_Eilish" target="_blank">Link</a></u></td>
+            </tr>
+            <tr>
+              <td>Jer Lau</td>
+              <td>November 20, 1992</td>
+              <td>
+                <ul class="song-list">
+                  <li>狂人日記 <span class="badge badge-success">Recommend</span></li>
+                  <li>砂之器</li>
+                  <li>人類群星閃耀時</li>
+                </ul>
+              </td>
+              <td><u><a href="https://en.wikipedia.org/wiki/Jer_Lau" target="_blank">Link</a></u></td>
+            </tr>
+            <tr>
+              <td>Ariana Grande</td>
+              <td>June 26, 1993</td>
+              <td>
+                <ul class="song-list">
+                  <li>No Tears Left to Cry</li>
+                  <li>7rings</li>
+                </ul>
+              </td>
+              <td><u><a href="https://en.wikipedia.org/wiki/Ariana_Grande" target="_blank">Link</a></u></td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="container-fluid">
+          <div class="quiz-header">
+            <h2>QUIZ TIME</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="question_1">
+          <p><strong>Q1. Do you know which Hong Kong Cantopop band Jer belongs to?</strong></p>
+          <button type="button" class="btn btn-outline-danger" data-toggle="collapse" data-target="#answer_1">Click to show answer</button>
+          <div id="answer_1" class="collapse">
+            <br>
+            <p><strong>Answer:</strong> Mirror</p>
+            <p class="upside-down-text">They are <del>very</del> <ins>extremely</ins> popular in Hong Kong!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="question_2">
+          <p><strong>Q2. Do you know which singer does the following quote belong to?</strong></p><blockquote cite="https://www.brainyquote.com/authors/billie-eilish-quotes"><p>  I've always done whatever I want and always been exactly who I am.
+          </p></blockquote>
+          <button type="button" class="btn btn-outline-info" data-toggle="collapse" data-target="#answer_2">Click to show answer</button>
+          <div id="answer_2" class="collapse">
+            <br>
+            <p><strong>Answer:</strong> Billie Ellish</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="container-fluid">
+          <img class="image-horizontal-rule" src="images/horizontal_rule_music_note.png">
+        </div>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>
