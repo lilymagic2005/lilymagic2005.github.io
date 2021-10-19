@@ -2,48 +2,137 @@
 <html>
 <head>
   <title>Lily's Personal Website - Home</title>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="style.css">
-  
 </head>
-
 <body>
 
-  <nav class="navbar navbar-default navbar-static-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Lily's Personal Website</a>
-      </div>
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="my_favourite_singers.html">My Favourite Singers</a></li>
-        <li><a href="my_favourite_activities.html">My Favourite Activities</a></li>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand">Lily's Personal Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="my_favourite_singers.html">My Favourite Singers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="my_favourite_activity.html">My Favourite Activity</a>
+        </li>
       </ul>
     </div>
   </nav>
-  
-  <div class="container">
 
-    <div class="jumbotron">
-      <h2>Lily's Personal Website</h2>
-      <p>Welcome!</p>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h3>Welcome!</h3>
+      <p>Please enjoy my personal website!</p>
     </div>
-    <p>This is some text.</p>
-    
+  </div>
 
-    <div class="well">
-      Basic Well
-      <img class="img-responsive" src="images/intro.jpeg" alt="myself">
+  <div class="container-fluid pt-3 my-3">
+    <div class="row">
+      <div class="col-7">
+        <div class="card my-intro-card h-100 shadow">
+          <div class="card-body">
+            <h3 class="card-title">My Introduction</h3>
+            <div class="basic-intro">
+              <p>Hi! I am Lily. I am a student of the <abbr title="The Hong Kong Polytechnic University">PolyU</abbr>.</p>
+            </div>
+            <div class="study-intro">
+              <div class="study-intro-header">
+                <h6>Study</h6>
+              </div>
+              <div class="study-intro-content">
+                <p>I am currently studying the degree of Master of Science in Health Informatics.<br>In this semester, I have selected:<h5><span class="badge badge-pill badge-warning">COMP5322 Internet Computing and Applications</span></h5>It is a really <mark>interesting</mark> course to me!</p>
+              </div>
+            </div>
+            <div class="like-intro">
+              <div class="like-intro-header">
+                <h6>What I Like</h6>
+              </div>
+              <div class="like-intro-content">
+                <p>I like outdoor activities. And I like my frogs very much! I will bring them by my side where ever I go.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="card name-card-card h-100 shadow">
+          <img class="card-img-top" src="images/me.jpg" alt="Me!">
+          <div class="card-body">
+            <h4 class="card-title">Lily</h4>
+            <p class="card-text"><br>Hello! Nice to meet you!<br>This is me with one of my frogs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="col">
+        <div class="container-fluid">
+          <hr>
+          <h2>My Frogs</h2>
+          <p>All my frogs are cute. They are my dear friends!<br>I takes a lot of photos for my frogs!
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="card frogs-carousel-card shadow">
+          <div class="card-body">
+            <h3 class="card-title">Frog Gallary</h3>
+            <p class="card-text">Enjoy their gallery!<br></p>
+            <div id="frogs" class="carousel slide" data-ride="carousel">
+              <ul class="carousel-indicators">
+                <li data-target="#frogs" data-slide-to="0" class="active"></li>
+                <li data-target="#frogs" data-slide-to="1"></li>
+                <li data-target="#frogs" data-slide-to="2"></li>
+                <li data-target="#frogs" data-slide-to="3"></li>
+              </ul>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="img-fluid" src="images/frog_1.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img class="img-fluid" src="images/frog_2.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img class="img-fluid" src="images/frog_3.jpg">
+                </div>
+                <div class="carousel-item">
+                  <img class="img-fluid" src="images/frog_4.jpg">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#frogs" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#frogs" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
+
+  <footer>
+    <p>Author: Lily</p>
+  </footer>
 
 </body>
 </html>
