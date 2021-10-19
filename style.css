@@ -1,78 +1,255 @@
 body {
-    background-image: url("background.jpeg");
-    background-size: cover;
-
+  background-image: url("images/background_white.jpg");
+  background-size: cover;
 }
 
-.navbar {
-  position: fixed;
+.row {
+  padding: 15px;
+}
+
+/*Card*/
+
+.card {
+  width:95%;
+  margin: auto;
+  border: none;
+}
+
+.card-title {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/*Navigation bar*/
+
+.navbar-brand {
+  font-size: 22px;
+  text-shadow: 5px 5px 10px #00FF00;
+}
+
+.navbar-brand:hover {
+  text-shadow: 5px 5px 10px #d7beed;
+}
+
+/***************************************************************************/
+
+/*index.html*/
+
+.jumbotron {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  outline-color: coral;
+}
+
+/*My Introduction*/
+
+.my-intro-card {
+  background-image: url("images/background_pink.jpg");
+  background-size: cover;
+}
+
+.basic-intro {
+  padding: 5px 5px 0px 5px;
+}
+
+.study-intro {
+  border-top-style: solid;
+  border-right-style: dashed;
+  border-bottom-style: dashed;
+  border-left-style: dashed;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #de7aae;
+  margin-top: 20px;
+}
+
+.study-intro-header {
+  background-color: #de7aae;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.study-intro-content {
+  padding: 5px;
+}
+
+/*WHat I Like*/
+
+.like-intro-header {
+  background-color: #b984e8;
+  color: #ffffff;
+  padding: 5px;
+}
+
+.like-intro {
+  border-top-style: solid;
+  border-right-style: dotted;
+  border-bottom-style: dotted;
+  border-left-style: dotted;
+  border-radius: 4px;
+  border-width: 2px;
+  border-color: #b984e8;
+  margin-top: 20px;
+}
+
+.like-intro-content {
+  padding: 5px;
+}
+
+/*Name card*/
+
+.name-card-card {
+  background: rgb(2,0,36);
+  background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(241,122,212,1) 0%, rgba(109,245,223,1) 100%);
+  background-size: cover;
+}
+
+.image-horizontal-rule {
+  width: 60%;
+  display: block;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+/*Frog Gallery*/
+
+.frogs-carousel-card {
+  background-image: url("images/background_yellow.jpg");
+  background-size: cover;
+}
+
+.carousel {
+  width: 60%;
+  margin: auto;
+}
+
+footer {
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+/***************************************************************************/
+/*my_favourite_activities.html*/
+
+.hiking-gallery-card {
+  background-image: url("images/background_blue.jpg");
+  background-size: cover;
+}
+
+.img-thumbnail {
   width: 100%;
-  top: 0;
-  z-index:999;
-  background-color: #c9e8ff;
-  border-bottom: 1px solid #115470;
-}
-
-.navbar .navbar-brand,
-.navbar .navbar-brand:focus {
-  background-image: linear-gradient(-90deg, #115470, #77a8bd);
-  border-right: 1px solid #115470;
-  font-size: 24px;
-  color: #ffffff;
-  text-shadow: 2px 2px 5px #46e3be;
-}
-
-.navbar .navbar-brand:hover {
-  color: #ffffff;
-  text-shadow: 2px 2px 5px #59479e;
-}
-
-.navbar .navbar-nav a {
-  font-size: 18px;
-  color: #2d70b3;
-}
-
-#navbar #navbar-nav a.active {
-  background-color: #8fa6bd;
-}
-
-.container {
-  margin-top: 100px;
-}
-
-#jumbotron {
-  background-color: red; /* For browsers that do not support gradients */
-  background-image: linear-gradient(-90deg, red, yellow);
-}
-
-.thumbnail {
-  width:90%;
+  height: auto;
 }
 
 .mirror-pool {
-  width:70%;
+  width: 70%;
 }
 
-/*
+/***************************************************************************/
 
-.navbar .navbar-brand:hover,
-.navbar .navbar-brand:focus {
-  color: #ffffff;
+/*my_favourite_singers.html*/
+
+.my-favourite-singers-intro-1 {
+  font-size: 150%;
+  text-align: center;
+  font-family: fantasy;
+  color: #a12f8e
 }
 
-.navbar .navbar-text a {
-  color: #ffffff;
+.my-favourite-singers-intro-2 {
+  color: #302aa1;
 }
-.navbar .navbar-text a:hover,
-.navbar .navbar-text a:focus {
-  color: #ffffff; 
+
+.img-music-band {
+  width: 45%;
+  animation-name: shake;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
 }
-.navbar .navbar-nav .nav-link {
-  color: #ffffff;
-  border-radius: .25rem;
-  margin: 0 0.25em;
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-.navbar .navbar-nav .nav-link:not(.disabled):hover,
-.navbar .navbar-nav .nav-link:not(.disabled):focus {
-  color: #ffffff;
-}*/
+
+.table {
+  width: 75%;
+}
+
+.song-list {
+  list-style-type: disc;
+}
+
+/*Quiz*/
+
+.quiz-header {
+  font-family: "Gill Sans", sans-serif;
+  color: #5c0757;
+  animation: glow 1.5s ease-in-out infinite alternate;
+  padding-top: 50px;
+}
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 20px #f794f1;
+    }
+    to {
+      text-shadow: 0 0 30px #e33af2, 0 0 10px #db1107;
+    }
+  }
+
+.question_1 {
+  border: 10px solid transparent;
+  padding: 10px;
+  border-image: url("images/heart_pink.png") 30 round;
+  background-color: rgba(253, 214, 234, 0.36);
+}
+
+.upside-down-text {
+  transform: rotate(180deg);
+  text-align: right;
+}
+
+.question_2 {
+  border: 10px solid transparent;
+  padding: 10px;
+  border-image: url("images/heart_blue.png") 30 round;
+  background-color: rgba(179, 240, 247, 0.36);
+}
+
+blockquote {
+  background: #94d1f7;
+  border-left: 15px solid #0987d6;
+  margin: 1em 10px;
+  padding: 1em 10px;
+}
+
+blockquote:before {
+  content: open-quote;
+  font-size: 5em;
+  color: #0987d6;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+blockquote p {
+  font-size: 20px;
+  font-family: cursive;
+  color: #04436b;
+  text-shadow: 2px 2px 5px #ffffff;
+  display: inline;
+}
